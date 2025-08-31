@@ -1,0 +1,75 @@
+{
+    "data": {
+        "skills": [
+            {
+                "name": "SAP Technologies",
+                "percent": 90,
+                "state": "Success",
+                "children": [
+                    {
+                        "name": "SAP FIORI",
+                        "percent": 90,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "SAPUI5",
+                        "percent": 95,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "SAP ODATA",
+                        "percent": 75,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "SAP BTP",
+                        "percent": 70,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "SAP Business Application Studio",
+                        "percent": 95,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "SAP Web IDE",
+                        "percent": 80,
+                        "state": "Success"
+                    }
+                ]
+            },
+            {
+                "name": "Programmierung",
+                "percent": 80,
+                "state": "Success",
+                "children": [
+                    {
+                        "name": "Python",
+                        "percent": 80,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "C++",
+                        "percent": 50,
+                        "state": "None"
+                    },
+                    {
+                        "name": "Javascript",
+                        "percent": 95,
+                        "state": "Success"
+                    },
+                    {
+                        "name": "Node.js",
+                        "percent": 40,
+                        "state": "Warning"
+                    },
+                    {
+                        "name": "HTML / CSS",
+                        "percent": 90,
+                        "state": "Success"
+                    }
+                ]
+            }
+        ]
+    }
+}

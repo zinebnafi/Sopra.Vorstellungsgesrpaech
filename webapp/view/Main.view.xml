@@ -1,0 +1,54 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.uxap"
+    xmlns:layout="sap.ui.layout"
+    xmlns:m="sap.m"
+    controllerName="project.controller.Main"
+    height="100%"
+>
+    <ObjectPageLayout
+        id="ObjectPageLayout"
+        showTitleInHeaderContent="true"
+        showEditHeaderButton="true"
+        editHeaderButtonPress="handleEditBtnPress"
+        headerContentPinned="true"
+        upperCaseAnchorBar="false"
+    >
+        <headerTitle>
+           <core:Fragment fragmentName="project.view.fragments.HeaderTitle" />
+        </headerTitle>
+
+        <headerContent>
+            <core:Fragment fragmentName="project.view.fragments.Header" />
+        </headerContent>
+
+       <sections>
+        <ObjectPageSection titleUppercase="false" title="Skills">
+            <heading>
+                <m:MessageStrip
+                    text="Ziel dieses Abschnitts ist es, meine bisherigen Skills übersichtlich darzustellen."
+                    type="Information" />
+            </heading>
+            <subSections>
+                <ObjectPageSubSection>
+                    <blocks>
+                        <core:Fragment fragmentName="project.view.fragments.Tree" />
+                    </blocks>
+                </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+
+        <ObjectPageSection titleUppercase="false" title="Dashboard">
+            <subSections>
+                <ObjectPageSubSection>
+                    <blocks>
+                        <core:Fragment fragmentName="project.view.fragments.Dashboard" />
+                    </blocks>
+                </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+    </sections>
+        
+    </ObjectPageLayout>
+</mvc:View>

@@ -1,0 +1,33 @@
+{
+    "datadashboard": {
+        "skills": [
+
+                    {
+                        "name": "SAP FIORI",
+                        "beherrschung": 70
+                    },
+                    {
+                        "name": "SAPUI5",
+                        "beherrschung": 80
+                    },
+                    {
+                        "name": "SAP ODATA",
+                        "beherrschung": 50
+                    },
+                    {
+                        "name": "SAP BTP",
+                        "beherrschung": 30
+                    },
+                    {
+                        "name": "SAP Business Application Studio",
+                        "beherrschung": 90
+                    },
+                    {
+                        "name": "SAP Web IDE",
+                        "beherrschung": 75
+                    }
+                ]
+            }}
+           
+        
+    

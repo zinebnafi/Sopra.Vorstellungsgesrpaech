@@ -1,0 +1,60 @@
+<core:FragmentDefinition
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data"
+>
+    <layout:FixFlex
+        id='chartFixFlex'
+        minFlexSize="500"
+    >
+        <!--Below is the setting panel -->
+
+        <layout:flexContent>
+            <viz:VizFrame
+                id="idVizFrame"
+                uiConfig="{applicationSet:'fiori'}"
+                height='100%'
+                width="100%"
+                vizType='radar'
+            >
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/datadashboard/skills}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition
+                                name="name"
+                                value="{name}"
+                            />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition
+                                name="beherrschung"
+                                value="{beherrschung}"
+                            />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem
+                        id='valueAxisFeed'
+                        uid="valueAxis"
+                        type="Measure"
+                        values="beherrschung"
+                    />
+                    <viz.feeds:FeedItem
+                        uid="categoryAxis"
+                        type="Dimension"
+                        values="name"
+                    />
+                </viz:feeds>
+                <viz:dependents>
+                    <viz:Popover id="idPopOver" />
+                </viz:dependents>
+            </viz:VizFrame>
+        </layout:flexContent>
+    </layout:FixFlex>
+</core:FragmentDefinition>

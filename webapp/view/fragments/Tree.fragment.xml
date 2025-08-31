@@ -1,0 +1,55 @@
+<core:FragmentDefinition
+    xmlns="sap.ui.table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+    xmlns:u="sap.ui.unified"
+    xmlns:core="sap.ui.core"
+>
+    <TreeTable
+        id="TreeTableBasic"
+        rows="{path:'Tree>/data/skills', parameters: {arrayNames:['children']}}"
+        selectionMode="None"
+        enableSelectAll="false"
+        ariaLabelledBy="title"
+    >
+        <extension>
+            <m:OverflowToolbar style="Clear">
+                <m:Title
+                    id="title"
+                    text="Erfahrungen"
+                />
+                <m:ToolbarSpacer />
+                <m:Button
+                    icon="sap-icon://drill-up"
+                    press="onCollapseAll"
+                />
+                <m:Button
+                    icon="sap-icon://drill-down"
+                    press="onExpand"
+                />
+            </m:OverflowToolbar>
+        </extension>
+        <columns>
+            <Column>
+                <m:Label text="Skills" />
+                <template>
+                    <m:Text
+                        text="{Tree>name}"
+                        wrapping="false"
+                    />
+                </template>
+            </Column>
+            <Column width="30%">
+                <m:Label text="Beherrschung" />
+                <template>
+                    <m:ProgressIndicator
+                        percentValue="{Tree>percent}"
+                        displayValue="{Tree>percent}%"
+                        showValue="true"
+                        state="{Tree>state}"
+                    />
+                </template>
+            </Column>
+        </columns>
+    </TreeTable>
+</core:FragmentDefinition>
