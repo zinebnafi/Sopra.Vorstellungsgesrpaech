@@ -8,7 +8,7 @@
     <m:FlexBox wrap="Wrap">
         <m:Avatar
             class="sapUiSmallMarginEnd"
-            src="../model/zineb-pic.jpeg"
+            src="../model/Volkswagen.png"
             displaySize="L"
         />
 

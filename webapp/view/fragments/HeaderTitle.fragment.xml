@@ -25,7 +25,7 @@
                 alignItems="Center"
             >
                 <m:Avatar
-                    src="../model/zineb-pic.jpeg"
+                    src="../model/Volkswagen.png"
                     class="sapUiTinyMarginEnd"
                 />
                 <m:Title

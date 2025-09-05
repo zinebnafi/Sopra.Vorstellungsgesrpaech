@@ -7,7 +7,7 @@
 >
     <TreeTable
         id="TreeTableBasic"
-        rows="{path:'Tree>/data/skills', parameters: {arrayNames:['children']}}"
+        rows="{path:'Tree>/data/volkswagenwerk', parameters: {arrayNames:['kpi']}}"
         selectionMode="None"
         enableSelectAll="false"
         ariaLabelledBy="title"
@@ -16,7 +16,7 @@
             <m:OverflowToolbar style="Clear">
                 <m:Title
                     id="title"
-                    text="Erfahrungen"
+                    text="{i18n>TreeTableTitle}"
                 />
                 <m:ToolbarSpacer />
                 <m:Button
@@ -31,7 +31,7 @@
         </extension>
         <columns>
             <Column>
-                <m:Label text="Skills" />
+                <m:Label text="{i18n>Treetablefirstcolumn}" />
                 <template>
                     <m:Text
                         text="{Tree>name}"
@@ -40,12 +40,19 @@
                 </template>
             </Column>
             <Column width="30%">
-                <m:Label text="Beherrschung" />
+                <m:Label text="{i18n>Treetablesecondcolumn}" />
                 <template>
                     <m:ProgressIndicator
-                        percentValue="{Tree>percent}"
-                        displayValue="{Tree>percent}%"
+                        percentValue="{Tree>wert}"
+                        displayValue="{
+        parts: [
+            { path: 'Tree>wert' },
+            { path: 'Tree>type' }  
+        ],
+        formatter: '.zinebFormatter.displayValue'
+    }"
                         showValue="true"
+                        visible="{= ${Tree>wert} !== undefined}"
                         state="{Tree>state}"
                     />
                 </template>

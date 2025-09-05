@@ -1,72 +1,408 @@
 {
     "data": {
-        "skills": [
+        "volkswagenwerk": [
             {
-                "name": "SAP Technologies",
-                "percent": 90,
-                "state": "Success",
-                "children": [
+                "name": "Europe",
+                "kpi": [
                     {
-                        "name": "SAP FIORI",
-                        "percent": 90,
-                        "state": "Success"
+                        "name": "Wolfsburg",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 70,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 85,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 40,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 95,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 90,
+                                "state": "Error",
+                                "type": "negativ"
+                            }
+                        ]
                     },
                     {
-                        "name": "SAPUI5",
-                        "percent": 95,
-                        "state": "Success"
+                        "name": "Zwickau",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 65,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 80,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 35,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 92,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 60,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     },
                     {
-                        "name": "SAP ODATA",
-                        "percent": 75,
-                        "state": "Success"
-                    },
-                    {
-                        "name": "SAP BTP",
-                        "percent": 70,
-                        "state": "Success"
-                    },
-                    {
-                        "name": "SAP Business Application Studio",
-                        "percent": 95,
-                        "state": "Success"
-                    },
-                    {
-                        "name": "SAP Web IDE",
-                        "percent": 80,
-                        "state": "Success"
+                        "name": "Bratislava",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 72,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 90,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 20,
+                                "state": "Success",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 96,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 40,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "name": "Programmierung",
-                "percent": 80,
-                "state": "Success",
-                "children": [
+                "name": "Amerika",
+                "kpi": [
                     {
-                        "name": "Python",
-                        "percent": 80,
-                        "state": "Success"
+                        "name": "Chattanooga (USA)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 71,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 87,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 34,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 93,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 50,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     },
                     {
-                        "name": "C++",
-                        "percent": 50,
-                        "state": "None"
+                        "name": "São Bernardo do Campo (Brasilien)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 65,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 80,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 38,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 91,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 55,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     },
                     {
-                        "name": "Javascript",
-                        "percent": 95,
-                        "state": "Success"
+                        "name": "Pacheco (Argentinien)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 62,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 76,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 41,
+                                "state": "Error",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 87,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 58,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Asien",
+                "kpi": [
+                    {
+                        "name": "Shanghai (China)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 72,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 84,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 31,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 94,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 48,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     },
                     {
-                        "name": "Node.js",
-                        "percent": 40,
-                        "state": "Warning"
+                        "name": "Pune (Indien)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 67,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 78,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 39,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 88,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 57,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     },
                     {
-                        "name": "HTML / CSS",
-                        "percent": 90,
-                        "state": "Success"
+                        "name": "Jakarta (Indonesien)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 61,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 75,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 42,
+                                "state": "Error",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 85,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 60,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Afrika",
+                "kpi": [
+                    {
+                        "name": "Kariega (Südafrika)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 68,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 81,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 35,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 90,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 51,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Port Elizabeth (Südafrika)",
+                        "kpi": [
+                            {
+                                "name": "Gesamtanlageneffektivität (OEE)",
+                                "wert": 66,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Liefertreue (On-Time Delivery)",
+                                "wert": 79,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Ausschussquote",
+                                "wert": 39,
+                                "state": "Warning",
+                                "type": "negativ"
+                            },
+                            {
+                                "name": "Qualitätsquote (First Pass Yield)",
+                                "wert": 88,
+                                "state": "Success",
+                                "type": "positiv"
+                            },
+                            {
+                                "name": "Krankenstand Mitarbeiter",
+                                "wert": 56,
+                                "state": "Warning",
+                                "type": "negativ"
+                            }
+                        ]
                     }
                 ]
             }

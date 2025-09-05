@@ -5,13 +5,14 @@ sap.ui.define([
     'sap/viz/ui5/format/ChartFormatter',
     'sap/viz/ui5/api/env/Format',
     'sap/ui/core/theming/Parameters',
-    "../model/InitPage"
-], function (Controller, BindingMode, JSONModel, ChartFormatter, Format, Parameters, InitPage) {
+    "../model/InitPage",
+    "../model/formatter"
+], function (Controller, BindingMode, JSONModel, ChartFormatter, Format, Parameters, InitPage, oFormatter) {
     "use strict";
 
-    var Controller = Controller.extend("project.controller.Main", {
+    return Controller.extend("project.controller.Main", {
 
-
+        zinebFormatter: oFormatter,
 
         oVizFrame: null,
 
@@ -24,15 +25,12 @@ sap.ui.define([
             var formatPattern = ChartFormatter.DefaultPattern;
             await InitPage.initPageSettings(this.getView());
 
+
             var oVizFrame = this.oVizFrame = this.getView().byId("idVizFrame");
             oVizFrame.setVizProperties({
                 plotArea: {
-                    dataLabel: { formatString: formatPattern.SHORTFLOAT_MFD2, visible: false },
-                    polarAxis: { label: { formatString: formatPattern.SHORTFLOAT_MFD2 }, title: { visible: true } },
-                    valueAxis: { label: { formatString: formatPattern.SHORTFLOAT_MFD2 }, title: { visible: true } },
 
-                    // 🔴 hard-coded red for the series (line + area)
-                    colorPalette: ["#FF0000"]   // or "rgb(255,0,0)"
+                    colorPalette: ["#FF0000"]
                 },
                 title: { visible: true, text: 'Radar Graphic for Skills' }
             });
@@ -58,7 +56,7 @@ sap.ui.define([
         },
         onExpand: function () {
             const oTreeTable = this.byId("TreeTableBasic");
-            oTreeTable.expandToLevel(3);
+            oTreeTable.expandToLevel(2);
         }
     });
 });
