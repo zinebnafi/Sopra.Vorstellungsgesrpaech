@@ -1,11 +1,15 @@
 <core:FragmentDefinition
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
+    xmlns:mc="sap.suite.ui.microchart"
     xmlns="sap.uxap"
     xmlns:layout="sap.ui.layout"
     xmlns:m="sap.m"
 >
-    <m:FlexBox wrap="Wrap">
+    <m:FlexBox
+        justifyContent="Start"
+        alignContent="Center"
+    >
         <m:Avatar
             class="sapUiSmallMarginEnd"
             src="../model/Volkswagen.png"
@@ -13,29 +17,44 @@
         />
 
         <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-            <m:Link text="+49 176 2212800" />
-            <m:Link text="zineb1997.nafi@gmail.com" />
-        </layout:VerticalLayout>
-
-        <layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
-            <m:Image src="../model/LinkedIn.png" />
-        </layout:HorizontalLayout>
-
-        <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-            <m:Label
-                text="Hallo ! Ich bin Zineb Nafi SAPUI5 / Fiori Entwicklerin"
-            />
-            <m:VBox>
-                <m:Label text="Reisebereitschaft" />
-                <m:ProgressIndicator
-                    percentValue="70"
-                    displayValue="70%"
+            <m:HBox>
+                <core:Icon src="sap-icon://map" />
+                <m:Text
+                    text="{i18n>Weltzentrale}"
+                    class="sapUiTinyMarginBegin"
                 />
-            </m:VBox>
+            </m:HBox>
+            <m:HBox class="sapUiTinyMarginTop">
+                <core:Icon
+                    src="sap-icon://call"
+                />
+                <m:Link
+                    text="+49 178 205705324"
+                    class="sapUiTinyMarginBegin"
+                />
+            </m:HBox>
         </layout:VerticalLayout>
 
         <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-            <m:Label text="Bochum, Deutschland" />
+            <m:Label text="{i18n>Einleitungstext}" />
+        </layout:VerticalLayout>
+
+        <layout:VerticalLayout class="sapUiLargeMarginBegin">
+            <m:Label text="{i18n>lblGlbStand}" />
+            <mc:HarveyBallMicroChart
+                class="sapUiSmallMarginBegin"
+                size="S"
+                total="100"
+                showTotal="false"
+                showFractions="false"
+            >
+                <mc:items>
+                    <mc:HarveyBallMicroChartItem
+                        fraction="400"
+                        color="Good"
+                    />
+                </mc:items>
+            </mc:HarveyBallMicroChart>
         </layout:VerticalLayout>
     </m:FlexBox>
 </core:FragmentDefinition>

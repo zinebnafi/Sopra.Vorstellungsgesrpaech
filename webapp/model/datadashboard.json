@@ -1,33 +1,111 @@
 {
     "datadashboard": {
-        "skills": [
-
-                    {
-                        "name": "SAP FIORI",
-                        "beherrschung": 70
-                    },
-                    {
-                        "name": "SAPUI5",
-                        "beherrschung": 80
-                    },
-                    {
-                        "name": "SAP ODATA",
-                        "beherrschung": 50
-                    },
-                    {
-                        "name": "SAP BTP",
-                        "beherrschung": 30
-                    },
-                    {
-                        "name": "SAP Business Application Studio",
-                        "beherrschung": 90
-                    },
-                    {
-                        "name": "SAP Web IDE",
-                        "beherrschung": 75
-                    }
-                ]
-            }}
-           
-        
-    
+        "cities": [
+            {
+                "name": "Wolfsburg"
+            },
+            {
+                "name": "Zwickau"
+            },
+            {
+                "name": "Bratislava"
+            },
+            {
+                "name": "Chattanooga (USA)"
+            },
+            {
+                "name": "São Bernardo do Campo (Brasilien)"
+            },
+            {
+                "name": "Pacheco (Argentinien)"
+            },
+            {
+                "name": "Shanghai (China)"
+            },
+            {
+                "name": "Pune (Indien)"
+            },
+            {
+                "name": "Jakarta (Indonesien)"
+            },
+            {
+                "name": "Kariega (Südafrika)"
+            },
+            {
+                "name": "Port Elizabeth (Südafrika)"
+            }
+        ],
+        "values": [
+            {
+                "kpi": "Gesamtanlageneffektivität (OEE)",
+                "Wolfsburg": 70.222222,
+                "Zwickau": 20,
+                "Bratislava": 22,
+                "Chattanooga (USA)": 71,
+                "São Bernardo do Campo (Brasilien)": 65,
+                "Pacheco (Argentinien)": 62,
+                "Shanghai (China)": 72,
+                "Pune (Indien)": 67,
+                "Jakarta (Indonesien)": 61,
+                "Kariega (Südafrika)": 68,
+                "Port Elizabeth (Südafrika)": 66
+            },
+            {
+                "kpi": "Liefertreue (On-Time Delivery)",
+                "Wolfsburg": 85,
+                "Zwickau": 80,
+                "Bratislava": 90,
+                "Chattanooga (USA)": 87,
+                "São Bernardo do Campo (Brasilien)": 80,
+                "Pacheco (Argentinien)": 76,
+                "Shanghai (China)": 84,
+                "Pune (Indien)": 78,
+                "Jakarta (Indonesien)": 75,
+                "Kariega (Südafrika)": 81,
+                "Port Elizabeth (Südafrika)": 79
+            },
+            {
+                "kpi": "Ausschussquote",
+                "Wolfsburg": 40,
+                "Zwickau": 35,
+                "Bratislava": 20,
+                "Chattanooga (USA)": 34,
+                "São Bernardo do Campo (Brasilien)": 38,
+                "Pacheco (Argentinien)": 41,
+                "Shanghai (China)": 31,
+                "Pune (Indien)": 39,
+                "Jakarta (Indonesien)": 42,
+                "Kariega (Südafrika)": 35,
+                "Port Elizabeth (Südafrika)": 39
+            },
+            {
+                "kpi": "Qualitätsquote (First Pass Yield)",
+                "Wolfsburg": 95,
+                "Zwickau": 92,
+                "Bratislava": 96,
+                "Chattanooga (USA)": 93,
+                "São Bernardo do Campo (Brasilien)": 91,
+                "Pacheco (Argentinien)": 87,
+                "Shanghai (China)": 94,
+                "Pune (Indien)": 88,
+                "Jakarta (Indonesien)": 85,
+                "Kariega (Südafrika)": 90,
+                "Port Elizabeth (Südafrika)": 88
+            },
+            {
+                "kpi": "Krankenstand Mitarbeiter",
+                "Wolfsburg": 90,
+                "Zwickau": 60,
+                "Bratislava": 40,
+                "Chattanooga (USA)": 50,
+                "São Bernardo do Campo (Brasilien)": 55,
+                "Pacheco (Argentinien)": 58,
+                "Shanghai (China)": 48,
+                "Pune (Indien)": 57,
+                "Jakarta (Indonesien)": 60,
+                "Kariega (Südafrika)": 51,
+                "Port Elizabeth (Südafrika)": 56
+            }
+        ]
+    }
+}

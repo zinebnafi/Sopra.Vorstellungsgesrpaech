@@ -4,6 +4,7 @@ sap.ui.define([], () => {
     "use strict";
 
     return {
+        
         displayValue(KPIValue, KPIType) {
             const oResourceBundle = this.getOwnerComponent().getModel("i18n").getResourceBundle();
 

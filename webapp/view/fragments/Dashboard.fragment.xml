@@ -12,7 +12,40 @@
         minFlexSize="500"
     >
         <!--Below is the setting panel -->
-
+        <layout:fixContent>
+            <Panel
+                id='settingsPanel'
+                expandable="true"
+                expanded="true"
+                headerText="Settings"
+                width="auto"
+            >
+                <content>
+                    <HBox>
+                        <VBox>
+                            <Label
+                                text="{i18n>lblCity}"
+                                design="Bold"
+                            />
+                            <Select
+                                id="idSelect"
+                                change="onDatasetSelected"
+                                forceSelection="true"
+                                items="{
+						path: '/datadashboard/cities',
+						sorter: { path: 'name' }
+					}"
+                            >
+                                <core:Item
+                                    key="{name}"
+                                    text="{name}"
+                                />
+                            </Select>
+                        </VBox>
+                    </HBox>
+                </content>
+            </Panel>
+        </layout:fixContent>
         <layout:flexContent>
             <viz:VizFrame
                 id="idVizFrame"
@@ -22,17 +55,17 @@
                 vizType='radar'
             >
                 <viz:dataset>
-                    <viz.data:FlattenedDataset data="{/datadashboard/skills}">
+                    <viz.data:FlattenedDataset data="{/datadashboard/values}">
                         <viz.data:dimensions>
                             <viz.data:DimensionDefinition
-                                name="name"
-                                value="{name}"
+                                name="KPI"
+                                value="{kpi}"
                             />
                         </viz.data:dimensions>
                         <viz.data:measures>
                             <viz.data:MeasureDefinition
-                                name="beherrschung"
-                                value="{beherrschung}"
+                                id="idMeasure"
+                                name="Wert"
                             />
                         </viz.data:measures>
                     </viz.data:FlattenedDataset>
@@ -43,12 +76,12 @@
                         id='valueAxisFeed'
                         uid="valueAxis"
                         type="Measure"
-                        values="beherrschung"
+                        values="Wert"
                     />
                     <viz.feeds:FeedItem
                         uid="categoryAxis"
                         type="Dimension"
-                        values="name"
+                        values="KPI"
                     />
                 </viz:feeds>
                 <viz:dependents>

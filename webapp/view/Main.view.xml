@@ -24,10 +24,10 @@
         </headerContent>
 
        <sections>
-        <ObjectPageSection titleUppercase="false" title="Skills">
+        <ObjectPageSection titleUppercase="false" title="{i18n>kpiSectionTitle}">
             <heading>
                 <m:MessageStrip
-                    text="Ziel dieses Abschnitts ist es, meine bisherigen Skills übersichtlich darzustellen."
+                    text="{i18n>kpiSectionInfo}"
                     type="Information" />
             </heading>
             <subSections>

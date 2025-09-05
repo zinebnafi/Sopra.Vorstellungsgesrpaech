@@ -9,7 +9,7 @@
         <expandedHeading>
             <m:HBox>
                 <m:Title
-                    text="{i18n>lblZineb}"
+                    text="{i18n>TitleHeader}"
                     wrapping="true"
                 />
                 <m:ObjectMarker
@@ -29,18 +29,18 @@
                     class="sapUiTinyMarginEnd"
                 />
                 <m:Title
-                    text="Zineb Nafi"
+                    text="{i18n>TitleHeader}"
                     wrapping="true"
                 />
             </m:FlexBox>
         </snappedHeading>
 
         <expandedContent>
-            <m:Text text="Junior UI Developer" />
+            <m:Text text="{i18n>Untertitel}" />
         </expandedContent>
 
         <snappedContent>
-            <m:Text text="Junior UI Developer" />
+            <m:Text text="{i18n>Untertitel}" />
         </snappedContent>
 
         <actions />
